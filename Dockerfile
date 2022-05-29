@@ -1,5 +1,5 @@
 # We use this dockerfile to build a packed tarfile which we import in our `docker` tests
-FROM node:current
+FROM node:current-buster-slim
 COPY . /typescript
 WORKDIR /typescript
 RUN npm install
